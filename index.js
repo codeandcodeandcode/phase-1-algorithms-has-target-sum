@@ -1,5 +1,26 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  let TargetSum = (array, sum) => {
+  
+             
+    for(let x in array){
+      for(let y in array){
+        
+        if (array[x] + array[y] == sum){
+            return true;
+           }
+
+        }
+    }  	
+return false;
+}
+
+
+
+let array = [2, 3, 4, 3, 6, 7]
+let sum = 100
+console.log(TargetSum(array, sum));
+
 }
 
 /* 
@@ -16,7 +37,7 @@ RETURN FALSE
 */
 
 /*
-  Add written explanation of your solution here
+  Given an array of integers and a target number, return the two integers that add up to the target number
 */
 
 // You can run `node index.js` to view these console logs
