@@ -42,8 +42,38 @@ RETURN FALSE
 
 // You can run `node index.js` to view these console logs
 if (require.main === module) {
-  // add your own custom tests in here
+
   console.log("Expecting: true");
+    console.log("=>", TargetSum([3, 15, 20, 4, 7, 14], 10));
+   
+    console.log("");
+
+   console.log("Expecting: true");
+   console.log("=>", TargetSum([21, 19, 5, 6, 40], 25));
+  
+  console.log("");
+ 
+ console.log("Expecting: false");
+   console.log("=>", TargetSum([1, 2, 1], 10));
+
+   console.log("");
+  
+  console.log("");
+   // Negative numbers?
+   console.log("Expecting: true");
+  console.log("=>", TargetSum([1, 2, 4, 6], 3));
+  
+  console.log("");
+  // Multiple pairs?
+  console.log("Expecting: true");
+   console.log("=>", TargetSum([1, 2, 3, 4], 5));
+ 
+   console.log("");
+   // Single numbers?
+  console.log("Expecting: false");
+  console.log("=>", TargetSum([5], 5));
+  }
+  console.log("Expecting: true");{
   console.log("=>", hasTargetSum([3, 8, 12, 4, 11, 7], 10));
 
   console.log("");
